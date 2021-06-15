@@ -1,0 +1,26 @@
+{
+    "Coco": [
+        [
+            "pLapPercentage" , "PlayeraceLocalizer"
+        ],
+        ["rangey",[205, 210]]
+    ],
+    "Crash": [
+        [
+            "pLapPercentage" , "PlayeraceLocalizer"
+        ],
+        ["rangey",[205, 215]]
+    ],
+    "Tyni": [
+        [
+            "pLapPercentage" , "PlayeraceLocalizer"
+        ],
+        ["rangey",[205, 215]]
+    ],
+    "Cortex": [
+        [
+            "pLapPercentage" , "PlayeraceLocalizer"
+        ],
+        ["rangey",[200, 215]]
+    ]
+}

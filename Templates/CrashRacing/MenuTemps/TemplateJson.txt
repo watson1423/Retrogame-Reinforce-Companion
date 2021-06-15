@@ -1,0 +1,14 @@
+{
+    "Senafor": [
+        [
+            "RaceStartDetect"
+        ],
+        []
+    ],
+    "Trophy": [
+        [
+            "MainStarterTemp"
+        ],
+        []
+    ]
+}

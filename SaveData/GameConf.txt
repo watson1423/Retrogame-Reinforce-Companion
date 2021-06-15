@@ -1,0 +1,52 @@
+{
+    "GameName": "Crash",
+    "Last": {
+        "Hook_pos": [],
+        "GameScreen": [20,65,610,505],
+        "Total_Traning_Runs": 0
+    },
+    "PlayerVars": {
+        "pPoints": [0,0,0,0,0],
+        "pPointsLasts": [0,0,0,0,0],
+        "pActions": [],
+        "pRewards": [],
+        "pObservation": [],
+        "pLap": 1,
+        "pPos": 0,
+        "pRage": false,
+        "pStressMode": "acelrand",
+        "pStress": 0,
+        "pLapPercentage": 0,
+        "pLastSeenX": 0,
+        "pLapTimerStart": 0,
+        "PBestScore": [0,0,0,0,0],
+        "pColorSignal": [0,0,0]
+    },
+    "PlayerReference": {
+        "PBestScore": [0,2000,0,0,0],
+        "PEverage": []
+    },
+    "PontuationSistem": [
+        ["SetScoreWithSprite4pareascreen",[["pLap",1],[[1000,"Lap2",2],[2000,"Lap3",3]]]],
+        ["SetScoreWithSprite4pareascreen",[["pPos",-1],[[1,"Pos1",1],[2,"Pos2",2],[3,"Pos3",3],[4,"Pos4",4]]]],
+        ["ProgressX100",[["pLapPercentage","pLastSeenX","pPos","pLap",1,5,560,0],[[0,"Crash"],[1,"Cortex"],[2,"Tyni"],[3,"Coco"]]]],
+        ["Finished4pareascreen",["StateFinished",1,1000]]
+    ],
+    "vImputCombos": {
+        "RaceRestartCombo": [["press",0,14,1,0.2],["press",0,12,2,0.2],["press",0,0,1,0.2]],
+        "StartMenuSequence": [["press",0,12,2,0.2],["press",0,12,2,0.2],["press",0,12,2,0.2],["press",0,0,1,0.2],["press",0,0,1,0.2],["press",0,12,2,0.2],["press",0,12,2,0.2],["press",0,0,1,0.5],["press",0,0,1,0.2],["press",1,0,1,0.2],["press",2,0,1,0.2],["press",3,0,1,0.5],["press",0,0,1,0.2],["press",0,0,1,0.2]]
+    },
+    "pyvarshow": [
+        ["p4_sum%","pLapPercentage",0,[[30,300],[50,270]]],
+        ["p4_sump:","pPoints",2,[[120,390],[50,270]]],
+        ["p4_trbl", "pColorSignal",[[[120,130],[390,400]],[[100,110],[320,330]]]]
+    ],
+    "Screen_Scaler" : 5,
+    "Framelock" : 60,
+    "pyviewcollor" : [0,255,0],
+    "TimeController" : [
+        ["GamestateTimeMark" , 1 , 210 , "RestartTrainSession"],
+        ["GamestateTimeMark" , 2 , 30 , "LoadingErrorDetected"],
+        ["GamestateTimeMark" , 3 , 30 , "RestartEmulator"]
+    ]
+}

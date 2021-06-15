@@ -1,0 +1,53 @@
+{
+    "Model0":{
+        "Name":"Main8max123",
+        "Layers":[ "Conv2dModel",[
+            ["input" , "Curentgraydzize"],
+            ["conv2d", 50 , 5 , "valid" , "relu" ],
+            ["maxpool2d", 4 , 4 , "valid" ],
+            ["conv2d", 50 , 2 , "valid" , "relu" ],
+            ["maxpool2d", 2 , 2 , "valid" ],
+            ["flatten" ],
+            ["dense", 200 , "relu" ],
+            ["dense", 100 , "relu" ],
+            ["dense", 50 , "relu" ],
+            ["dense", 25 , "relu" ],
+            ["dense", 15 , "relu" ],
+            ["dense", 1 , "relu" ]
+            ]
+        ],
+        "Extras":[
+            ["optimizer","Adam",0.003,0.9,0.9,0.1,false,0.1],
+            ["compile","categorical_crossentropy",["accuracy"]]
+        ],
+        "FirstTrainData":[],
+        "ShowFirstTrainResults": true ,
+        "actiontype":"Serialized8",
+        "modeltype":"keras"
+    },
+    "Model1":{
+        "Name":"MainRaymax123",
+        "Layers":[ "Conv2dModel",[
+            ["input" , "Curentgraydzize"],
+            ["conv2d", 25 , 10 , "valid" , "relu" ],
+            ["maxpool2d", 2 , 2 , "valid" ],
+            ["conv2d", 45 , 4 , "valid" , "relu" ],
+            ["maxpool2d", 3 , 3 , "valid" ],
+            ["flatten" ],
+            ["dense", 200 , "relu" ],
+            ["dense", 100 , "relu" ],
+            ["dense", 50 , "relu" ],
+            ["dense", 25 , "relu" ],
+            ["dense", 15 , "relu" ]
+            ]
+        ],
+        "Extras":[
+            ["optimizer","Adam",0.003,0.9,0.9,0.1,false,0.1],
+            ["compile","categorical_crossentropy",["accuracy"]]
+        ],
+        "FirstTrainData":[],
+        "ShowFirstTrainResults": true ,
+        "actiontype":"15array",
+        "modeltype":"keras"
+    }
+}
